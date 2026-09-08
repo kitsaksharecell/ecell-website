@@ -669,6 +669,12 @@ p {
   flex-wrap: wrap;
 }
 
+.ongoing-buttons-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
 .ongoing-register-btn {
   display: inline-flex;
   align-items: center;
@@ -689,6 +695,17 @@ p {
 .ongoing-register-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 40px rgba(249, 115, 22, 0.55);
+  filter: brightness(1.06);
+}
+
+.ongoing-register-btn.canva-round-btn {
+  background: linear-gradient(135deg, #00c4cc, #7d2ae8);
+  box-shadow: 0 14px 32px rgba(125, 42, 232, 0.38);
+}
+
+.ongoing-register-btn.canva-round-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(125, 42, 232, 0.55);
   filter: brightness(1.06);
 }
 
@@ -1214,6 +1231,7 @@ p {
     align-items: stretch;
   }
 
+  .ongoing-action-row .ongoing-buttons-stack,
   .ongoing-action-row .ongoing-register-btn {
     width: 100%;
   }
