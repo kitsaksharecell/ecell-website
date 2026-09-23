@@ -108,3 +108,21 @@ document.addEventListener("keydown", (event) => {
     closeAlbum();
   }
 });
+
+const articlePoster = document.querySelector(".article-poster-wrap");
+if (articlePoster) {
+  articlePoster.style.cursor = "zoom-in";
+  articlePoster.setAttribute("title", "Click to view full poster");
+  articlePoster.addEventListener("click", () => {
+    albumTitle.textContent = "Behind the Brand: Airbnb";
+    albumPhotos.innerHTML = `
+      <figure style="height: auto; max-height: 80vh; grid-column: 1 / -1; display: flex; justify-content: center; background: transparent;">
+        <img src="assets/airbnb-behind-the-brand.jpg" alt="Behind the Brand: Airbnb" style="width: auto; max-width: 100%; max-height: 75vh; object-fit: contain; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" />
+      </figure>
+    `;
+    albumModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    modalClose.focus();
+  });
+}
+
