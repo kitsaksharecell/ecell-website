@@ -1,0 +1,17 @@
+{
+  "name": "ecell-website",
+  "version": "1.0.0",
+  "description": "KITS Akshar E-Cell Official Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "ecell",
+    "website"
+  ],
+  "author": "KITS Akshar E-Cell",
+  "license": "ISC"
+}
