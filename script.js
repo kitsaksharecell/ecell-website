@@ -142,6 +142,8 @@ if (albumModal) {
 const articleMeta = {
   airbnb: { title: "Airbnb", breadcrumb: "Airbnb Case Study", poster: "assets/airbnb-behind-the-brand.jpg" },
   nike:   { title: "Nike",   breadcrumb: "Nike Case Study",   poster: "assets/nike-behind-the-brand.jpg" },
+  tesla:  { title: "Tesla",  breadcrumb: "Tesla Case Study",  poster: "assets/tesla-behind-the-brand.jpg" },
+  indigo: { title: "IndiGo", breadcrumb: "IndiGo Case Study", poster: "assets/indigo-behind-the-brand.jpg" },
 };
 
 let currentArticleId = null;
@@ -302,6 +304,8 @@ document.addEventListener("click", (e) => {
 const initialLikes = {
   airbnb: 28,
   nike: 35,
+  tesla: 42,
+  indigo: 31,
 };
 
 function getLikes(articleId) {
@@ -554,6 +558,52 @@ const seedComments = {
       text: "Just Do It isn't just a tagline — it's the whole philosophy of starting without waiting for perfect conditions. Great read for our campus founders!",
       date: "4 days ago",
       avatar: "VV",
+    },
+  ],
+  tesla: [
+    {
+      id: "tesla_seed_1",
+      author: "Teja Sri (EEE, 3rd Year)",
+      text: "Challenging the idea that EVs were boring golf carts was a brilliant positioning move. Highly relevant for engineering students working on EV projects!",
+      date: "1 day ago",
+      avatar: "TS",
+    },
+    {
+      id: "tesla_seed_2",
+      author: "Sai Charan (Mech, 4th Year)",
+      text: "First-principles thinking applied to battery tech is what separated Tesla from traditional automakers. Great write-up!",
+      date: "2 days ago",
+      avatar: "SC",
+    },
+    {
+      id: "tesla_seed_3",
+      author: "Niharika P (E-Cell Core Team)",
+      text: "Drive cleaner, live brighter! Another fantastic Behind the Brand article by our team.",
+      date: "3 days ago",
+      avatar: "NP",
+    },
+  ],
+  indigo: [
+    {
+      id: "indigo_seed_1",
+      author: "Aditya Verma (Mech, 3rd Year)",
+      text: "The operational efficiency of 25-minute turnarounds and a single aircraft type is pure engineering discipline. So many startup takeaways!",
+      date: "1 day ago",
+      avatar: "AV",
+    },
+    {
+      id: "indigo_seed_2",
+      author: "Harini B (MBA, 1st Year)",
+      text: "On-time performance and low cost — IndiGo built an absolute powerhouse by keeping their value proposition simple and clear.",
+      date: "2 days ago",
+      avatar: "HB",
+    },
+    {
+      id: "indigo_seed_3",
+      author: "Manish Kumar (E-Cell Lead)",
+      text: "Execution beats extra features every time. Great addition to the Behind the Brand series!",
+      date: "3 days ago",
+      avatar: "MK",
     },
   ],
 };
